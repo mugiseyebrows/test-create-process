@@ -1,0 +1,17 @@
+3 args:
+0 "callee2"
+1 "foo"
+2 "bar"
+
+2 args:
+0 "foo"
+1 "bar"
+
+3 args:
+0 "D:\dev\test-create-process\build\Release\callee2.exe"
+1 "foo"
+2 "bar"
+
+lpApplicationName = 0 lpCommandLine = "callee2 foo bar" pass
+lpApplicationName = "D:\dev\test-create-process\build\Release\callee2.exe" lpCommandLine = "foo bar" pass
+lpApplicationName = 0 lpCommandLine = "D:\dev\test-create-process\build\Release\callee2.exe foo bar" pass

@@ -1,0 +1,16 @@
+
+name tests
+lpApplicationName = "callee1" lpCommandLine = 0 fail 2
+lpApplicationName = 0 lpCommandLine = "callee1" pass
+lpApplicationName = "callee1" lpCommandLine = "foo bar" fail 2
+lpApplicationName = "callee1" lpCommandLine = " foo bar" fail 2
+lpApplicationName = "callee1 foo bar" lpCommandLine = 0 fail 2
+lpApplicationName = 0 lpCommandLine = "callee1 foo bar" pass
+
+full path tests
+lpApplicationName = "D:\dev\test-create-process\build\Release\callee1.exe" lpCommandLine = 0 pass
+lpApplicationName = 0 lpCommandLine = "D:\dev\test-create-process\build\Release\callee1.exe" pass
+lpApplicationName = "D:\dev\test-create-process\build\Release\callee1.exe" lpCommandLine = "foo bar" pass
+lpApplicationName = "D:\dev\test-create-process\build\Release\callee1.exe" lpCommandLine = " foo bar" pass
+lpApplicationName = "D:\dev\test-create-process\build\Release\callee1.exe foo bar" lpCommandLine = 0 fail 2
+lpApplicationName = 0 lpCommandLine = "D:\dev\test-create-process\build\Release\callee1.exe foo bar" pass
